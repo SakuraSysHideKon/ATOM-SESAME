@@ -35,6 +35,7 @@ WiFi設定はESPRESSIF社の「ESP-TOUCH」を使って設定します。
 ### セサミWeb API利用のためにはAPI Keyが必要
 下記ページににて、Web API利用のためのAPI Keyを取得する必要があります。
 API Keyを取得するためには、スマートロックデバイスのUUIDとSecret Keyが必要です。
+
 [Sesame Web API API Key 取得](https://partners.candyhouse.co/)
 ### ATOM LiteのMACアドレスにAPI Keyを紐付け
 複数台のATOM Liteデバイス個々にAPI Keyを紐付けできます。
