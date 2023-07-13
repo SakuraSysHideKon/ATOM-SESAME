@@ -32,6 +32,16 @@
 1. base64_encode
 ### WiFi設定
 WiFi設定はESPRESSIF社の「ESP-TOUCH」を使って設定します。
+### セサミWeb API利用のためにはAPI Keyが必要
+下記ページににて、Web API利用のためのAPI Keyを取得する必要があります。
+API Keyを取得するためには、スマートロックデバイスのUUIDとSecret Keyが必要です。
+[Sesame Web API API Key 取得](https://partners.candyhouse.co/)
+### ATOM LiteのMACアドレスにAPI Keyを紐付け
+複数台のATOM Liteデバイス個々にAPI Keyを紐付けできます。
+この機能により、複数台のデバイスを同じスケッチで動作させることができます。
+
+ATOM LiteデバイスのMACアドレスを調べるには、「GetChipInformation.ino」をATOM Liteに書き込むとシリアルモニタにチップ情報が表示されます。
+「MAC Adress:」に続く12桁の英数字がMACアドレスとなります。
 ### 注意事項
 #### setup()の「おまじない」は、絶対消さないでください。
 ATOM LiteはWiFiモジュールを使い高負荷なループの処理を行うと、M5.Btn.wasPressed()が頻繁にTrueになり、ボタンを押していないにも関わらず、ボタンが連打されるというオカルトチックな動作をします。
@@ -57,4 +67,5 @@ OS：Windows10 Pro
 動作実行機器： M5Stack ATOM Lite
 ### 参照
 [M5Stack ATOM Lite を使って セサミスマートロックを操作してみました。](https://sakura-system.com/?p=3497)
+
 [SESAME WEB API](https://doc.candyhouse.co/ja/SesameAPI)
